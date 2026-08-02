@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benzir Ahammed — Space Power Electronics & PCB Design Engineer</title>
+<meta name="description" content="Space power electronics engineer specialising in satellite EPS, PCDU, solar arrays and multi-layer PCB design. 3 first-author IEEE publications.">
+<meta property="og:title" content="Benzir Ahammed — Space Power Electronics Engineer">
+<meta property="og:description" content="Satellite EPS · PCDU · Solar Arrays · MPPT · Multi-layer PCB">
+<meta property="og:image" content="img/sat_hand.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1220;--bg2:#101A2E;--card:#131F36;--line:#1E2C47;--txt:#E8EDF5;--mut:#8A97AC;--acc:#19B3C8;--blue:#4C82D0}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;line-height:1.65;font-size:16px}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+nav .logo{font-weight:800;letter-spacing:.5px}
+nav .logo span{color:var(--acc)}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{color:var(--mut);text-decoration:none;font-size:14px;font-weight:500}
+nav a:hover{color:var(--txt)}
+.hero{padding:90px 0 70px;background:
+ radial-gradient(1000px 500px at 80% -10%,rgba(25,179,200,.08),transparent),
+ radial-gradient(700px 400px at 10% 110%,rgba(76,130,208,.07),transparent)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--acc);letter-spacing:2px;margin-bottom:14px}
+h1{font-size:52px;line-height:1.08;font-weight:800;margin-bottom:14px}
+.role{font-size:20px;color:var(--blue);font-weight:600;margin-bottom:8px}
+.sub{color:var(--mut);font-size:15px;margin-bottom:22px}
+.hook{font-size:17.5px;color:#C3CDDC;margin-bottom:30px;max-width:560px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:13px 26px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;transition:.2s}
+.btn.primary{background:var(--acc);color:#04222A}
+.btn.primary:hover{filter:brightness(1.12)}
+.btn.ghost{border:1px solid var(--line);color:var(--txt)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.hero img{width:100%;border-radius:14px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+section{padding:80px 0}
+.sec-k{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc);letter-spacing:2px;margin-bottom:8px}
+h2{font-size:32px;font-weight:800;margin-bottom:28px}
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+.about p{color:#C3CDDC;margin-bottom:16px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.stat b{display:block;font-size:30px;color:var(--acc);font-weight:800;margin-bottom:4px}
+.stat span{font-size:13.5px;color:var(--mut)}
+.comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.comp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;transition:.2s}
+.comp:hover{border-color:var(--acc);transform:translateY(-3px)}
+.comp h4{color:var(--blue);font-size:15.5px;margin-bottom:8px}
+.comp p{font-size:13.5px;color:var(--mut)}
+.tools{margin-top:26px;padding:16px 22px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;font-size:14px;color:var(--mut)}
+.tools b{color:var(--txt)}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:36px;margin-bottom:36px}
+.pnum{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc);letter-spacing:2px;margin-bottom:6px}
+.proj h3{font-size:24px;font-weight:800;margin-bottom:4px}
+.pclient{color:var(--blue);font-weight:600;font-size:14.5px}
+.pmeta{color:var(--mut);font-size:13px;margin-bottom:14px}
+.psum{color:#C3CDDC;font-size:15.5px;margin-bottom:20px;max-width:840px}
+.gallery{display:grid;gap:14px;margin-bottom:22px}
+.gallery.g2{grid-template-columns:1fr 1fr}
+.gallery.g3{grid-template-columns:1fr 1fr 1fr}
+.gallery.g4{grid-template-columns:1fr 1fr}
+.gallery figure{background:#0D1526;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.gallery img{width:100%;height:230px;object-fit:cover;display:block;cursor:zoom-in;transition:.25s}
+.gallery img:hover{transform:scale(1.03)}
+.gallery figcaption{font-size:12px;color:var(--mut);padding:9px 12px}
+.hl-label{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--acc);letter-spacing:2px;margin-bottom:10px}
+.hl{list-style:none}
+.hl li{padding-left:20px;position:relative;margin-bottom:9px;font-size:14.5px;color:#C3CDDC}
+.hl li:before{content:"–";position:absolute;left:0;color:var(--acc)}
+.hl b{color:var(--txt)}
+.outcome{margin-top:18px;background:var(--bg2);border-left:3px solid var(--acc);border-radius:8px;padding:14px 18px;font-size:14px;color:#C3CDDC}
+.outcome span{font-weight:700;color:var(--txt);margin-right:8px}
+.tl{border-left:2px solid var(--line);margin-left:8px;padding-left:30px}
+.tl-item{margin-bottom:34px;position:relative}
+.tl-item:before{content:"";position:absolute;left:-37px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--acc)}
+.tl-item h4{font-size:17px}
+.tl-item .co{color:var(--blue);font-size:14.5px;font-weight:600}
+.tl-item .dt{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--mut);margin-bottom:6px}
+.tl-item p{font-size:14px;color:var(--mut)}
+.pub{display:flex;gap:20px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--line)}
+.pubn{font-family:'JetBrains Mono',monospace;color:var(--acc);font-weight:700;font-size:15px;padding-top:2px}
+.pubt{font-weight:600;font-size:15.5px}
+.pubm{color:var(--mut);font-size:13px;margin-top:3px}
+.publink{margin-left:auto;white-space:nowrap;color:var(--acc);text-decoration:none;font-size:13px;font-weight:600;border:1px solid var(--line);padding:8px 14px;border-radius:8px}
+.publink:hover{border-color:var(--acc)}
+.contact-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:44px;text-align:center}
+.contact-box p{color:#C3CDDC;font-size:17px;max-width:600px;margin:0 auto 26px}
+.contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.contact-links a{color:var(--txt);text-decoration:none;border:1px solid var(--line);padding:12px 22px;border-radius:9px;font-size:14.5px}
+.contact-links a:hover{border-color:var(--acc);color:var(--acc)}
+footer{padding:34px 0;border-top:1px solid var(--line);color:var(--mut);font-size:13px;text-align:center}
+#lightbox{display:none;position:fixed;inset:0;background:rgba(4,8,16,.94);z-index:100;align-items:center;justify-content:center;cursor:zoom-out}
+#lightbox img{max-width:94vw;max-height:92vh;border-radius:8px}
+.fade{opacity:0;transform:translateY(22px);transition:.6s ease}
+.fade.vis{opacity:1;transform:none}
+@media(max-width:860px){
+ .hero .wrap{grid-template-columns:1fr}
+ h1{font-size:38px}
+ .about-grid{grid-template-columns:1fr}
+ .comp-grid{grid-template-columns:1fr 1fr}
+ .gallery.g2,.gallery.g3,.gallery.g4{grid-template-columns:1fr}
+ nav ul{display:none}
+ .proj{padding:24px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<div class="logo">BENZIR<span>.</span>AHAMMED</div>
+<ul><li><a href="#about">About</a></li><li><a href="#work">Work</a></li>
+<li><a href="#experience">Experience</a></li><li><a href="#publications">Publications</a></li>
+<li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<div class="kicker">SPACE POWER ELECTRONICS · PCB DESIGN</div>
+<h1>Benzir Ahammed</h1>
+<div class="role">Space Power Electronics &amp; PCB Design Engineer</div>
+<div class="sub">Satellite EPS · PCDU · Solar Arrays · MPPT · Multi-layer PCB</div>
+<p class="hook">I design the power hardware that keeps small spacecraft alive — from architecture and schematic to fabricated, bench-validated flight boards.</p>
+<div class="btns"><a class="btn primary" href="#work">View Work</a>
+<a class="btn ghost" href="Benzir_Ahammed_CV.pdf" download>Download CV</a></div>
+</div>
+<img src="img/sat_hand.jpg" alt="1U CubeSat with deployed dipole antennas">
+</div></header>
+
+<section id="about"><div class="wrap">
+<div class="sec-k">01 · ABOUT</div><h2>Engineer of flight-ready power systems</h2>
+<div class="about-grid">
+<div class="about">
+<p>I'm a hardware engineer from Dhaka, Bangladesh, with a BSc in Aeronautical Engineering (Avionics) from Aviation &amp; Aerospace University Bangladesh. My work lives where power electronics meets spaceflight — CubeSat electrical power systems, power conditioning and distribution units, solar arrays and MPPT converters, taken all the way from first-principles calculation to assembled, validated hardware.</p>
+<p>Currently I lead battery, BMS and motor-controller R&amp;D at <b>Palki Motors</b> — Bangladesh's first indigenous electric vehicle programme — while designing satellite power hardware for international clients including <b>SOLLAB Co., Ltd. (South Korea)</b>, for whom I've delivered a 222.8 W five-panel solar array design and a 5-channel UMPPT PCDU.</p>
+<p>I'm first author of three IEEE publications on CubeSat power architecture and low-power satellite communication, and my thesis CubeSat received the Best Thesis Award.</p>
+</div>
+<div class="stats">
+<div class="stat"><b>10+</b><span>Hardware projects delivered</span></div>
+<div class="stat"><b>5</b><span>IEEE publications — 3 first-author</span></div>
+<div class="stat"><b>222.8&nbsp;W</b><span>Largest solar array designed (184 cells)</span></div>
+<div class="stat"><b>R=0.991</b><span>CubeSat EPS reliability (N-1 redundant)</span></div>
+</div>
+</div>
+<div class="comp-grid" style="margin-top:44px">
+<div class="comp"><h4>Space Power Systems</h4><p>CubeSat EPS, PCDU design, triple-junction GaAs arrays, UMPPT, N-1 redundancy</p></div>
+<div class="comp"><h4>Power Electronics</h4><p>Buck / boost / buck-boost converters, MPPT control, gate drive, snubber &amp; thermal design</p></div>
+<div class="comp"><h4>PCB Engineering</h4><p>Multi-layer layout, EMI/EMC, signal integrity, star grounding, DFM release</p></div>
+<div class="comp"><h4>Energy Storage</h4><p>Li-ion / LiFePO4 charging, supercapacitor hybrids, BMS, cell balancing, SoC estimation</p></div>
+<div class="comp"><h4>Embedded Firmware</h4><p>ATmega, ESP32, STM32 · CAN / SPI / I2C / UART · Python, C, C++</p></div>
+<div class="comp"><h4>Validation</h4><p>Bench bring-up, oscilloscope &amp; electronic-load testing, root-cause failure analysis</p></div>
+</div>
+<div class="tools"><b>Tools</b> — EasyEDA Pro · KiCad · LTspice · Proteus · MATLAB/Simulink · JLCPCB / LCSC turnkey flow</div>
+</div></section>
+
+<section id="work" style="background:var(--bg2)"><div class="wrap">
+<div class="sec-k">02 · SELECTED WORK</div><h2>Ten projects, architecture to hardware</h2>
+
+<article class="proj" id="p01">
+  <div class="pnum">PROJECT 01</div>
+  <h3>1U CubeSat OBC &amp; Radio — Full-Stack Flight Avionics</h3>
+  <div class="pclient">Aviation &amp; Aerospace University Bangladesh (AAUB)</div>
+  <div class="pmeta">Role: Architect, Schematic &amp; PCB Designer  ·  Fabricated, assembled and bench-validated</div>
+  <p class="psum">A flight-ready On-Board Computer and UHF radio for a 1U CubeSat — full schematic design, component selection, multi-layer layout and EPS integration, taken through fabrication, assembly and live bench bring-up.</p>
+  <div class="gallery g4"><figure><img src="img/obc_photo.jpg" alt="Assembled OBC &amp; Radio board — PC-104 form factor" loading="lazy" onclick="lb(this)"><figcaption>Assembled OBC &amp; Radio board — PC-104 form factor</figcaption></figure>
+<figure><img src="img/obc_3d.jpg" alt="3D render — EasyEDA Pro" loading="lazy" onclick="lb(this)"><figcaption>3D render — EasyEDA Pro</figcaption></figure>
+<figure><img src="img/obc_layout.jpg" alt="PCB layout — subsystem partitioning" loading="lazy" onclick="lb(this)"><figcaption>PCB layout — subsystem partitioning</figcaption></figure>
+<figure><img src="img/obc_bench.jpg" alt="Live bench bring-up and firmware validation" loading="lazy" onclick="lb(this)"><figcaption>Live bench bring-up and firmware validation</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li>Built around the <b>ATmega2560 (100-pin TQFP)</b> running all satellite housekeeping — power control, sensor polling, memory, communication and real-time telemetry.</li><li><b>Dual redundant 4 Mbit SPI F-RAM (CY15B104Q x2)</b> so critical mission data survives a single memory failure.</li><li>UHF link with <b>Si4463 transceiver + RFFM6406 front-end PA</b>; PA bypass mode enables low-power beacon operation during eclipse. SAW TX/RX filters on an isolated +3.3VA analogue rail.</li><li><b>Closed-loop EPS integration</b> — EN_SOLAR, PGSOLAR, PGCHR, STAT1/2 and battery-alarm lines monitored directly by the OBC over the PC-104 header.</li><li>BMX160 9-DOF IMU, DS3231 RTC with battery backup, CP2102 USB-UART programming chain — assembled and validated live on the bench.</li></ul>
+  <div class="outcome"><span>Outcome</span> Fabricated, assembled and bench-validated as the avionics core of AAUB's indigenous 1U CubeSat programme — the platform behind the Best Thesis Award and two first-author IEEE publications.</div>
+</article>
+
+<article class="proj" id="p02">
+  <div class="pnum">PROJECT 02</div>
+  <h3>1U CubeSat EPS — N-1 Redundant Power System</h3>
+  <div class="pclient">Aviation &amp; Aerospace University Bangladesh (AAUB)</div>
+  <div class="pmeta">Role: Architect, Schematic &amp; PCB Designer  ·  Simulated, fabricated and live-validated</div>
+  <p class="psum">A flight-ready Electrical Power System for a 1U CubeSat — distributed N-1 redundant architecture taken from reliability modelling through schematic, 96 x 96 mm PC-104 layout, assembly and a live telemetry dashboard.</p>
+  <div class="gallery g3"><figure><img src="img/eps_photo.jpg" alt="Assembled EPS — 4-cell Li-ion pack with thermistors" loading="lazy" onclick="lb(this)"><figcaption>Assembled EPS — 4-cell Li-ion pack with thermistors</figcaption></figure>
+<figure><img src="img/eps_3d.jpg" alt="3D render — deployment switches and solar inputs" loading="lazy" onclick="lb(this)"><figcaption>3D render — deployment switches and solar inputs</figcaption></figure>
+<figure><img src="img/eps_dash.jpg" alt="Live bring-up with solar panels + Python telemetry dashboard over SPI/I2C" loading="lazy" onclick="lb(this)"><figcaption>Live bring-up with solar panels + Python telemetry dashboard over SPI/I2C</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li><b>Distributed N-1 redundant architecture</b> raising modelled reliability from R = 0.797 (conventional) to <b>R = 0.991</b>.</li><li><b>BQ24650 MPPT solar charging</b> with CC-CV control holding SOC above 90% across simulated LEO orbits; converter efficiency sustained above 85% at typical loads.</li><li>Power path built on LTC3130 / TPS63020 regulators, LTC4376 / MAX40200 ideal diodes and <b>LTC4362-2 eFuse circuit breakers</b> for per-rail fault isolation.</li><li>16-channel telemetry — <b>ADS8688 16-bit SPI ADC</b>, BQ27441-G1 fuel gauge and ZXCT1086 current sensing across cells, solar strings and subsystem rails.</li><li>Validated in <b>MATLAB/Simulink (500 km orbit, 35-minute eclipse)</b> and on the bench with a live Python telemetry dashboard.</li></ul>
+  <div class="outcome"><span>Outcome</span> Basis of the first-author MEPCON 2025 paper on reliability-oriented distributed CubeSat EPS with N-1 redundancy and hybrid storage.</div>
+</article>
+
+<article class="proj" id="p03">
+  <div class="pnum">PROJECT 03</div>
+  <h3>Indigenous 1U CubeSat — Full-Stack Hardware</h3>
+  <div class="pclient">Undergraduate Thesis — Best Thesis Award</div>
+  <div class="pmeta">Role: System Architect &amp; Designer of all five subsystems  ·  2025</div>
+  <p class="psum">A complete flight-ready 1U CubeSat — EPS, OBC, Radio, Antenna and Science Payload, every subsystem architected, designed, fabricated and validated as one integrated PC-104 stack.</p>
+  <div class="gallery g4"><figure><img src="img/sat_hand.jpg" alt="Integrated 1U stack with deployed dipole antennas" loading="lazy" onclick="lb(this)"><figcaption>Integrated 1U stack with deployed dipole antennas</figcaption></figure>
+<figure><img src="img/sat_stack.jpg" alt="Powered flight stack — all subsystems live" loading="lazy" onclick="lb(this)"><figcaption>Powered flight stack — all subsystems live</figcaption></figure>
+<figure><img src="img/sat_flat.jpg" alt="All five subsystem boards, designed in-house" loading="lazy" onclick="lb(this)"><figcaption>All five subsystem boards, designed in-house</figcaption></figure>
+<figure><img src="img/sat_bench.jpg" alt="Integration and bring-up on the bench" loading="lazy" onclick="lb(this)"><figcaption>Integration and bring-up on the bench</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li><b>EPS</b> — BQ24650 MPPT charging, LTC3130 / TPS63020 rails, LTC4362-2 eFuses, ADS8688 16-bit telemetry ADC; <b>N-1 redundant architecture, R = 0.991</b>, validated with a live Python dashboard.</li><li><b>OBC &amp; Radio</b> — ATmega2560 flight computer, Si4463 UHF transceiver with RFFM6406 PA, dual redundant CY15B104Q F-RAM, BMX160 IMU, DS3231 RTC; closed-loop EPS management over SPI/I2C.</li><li><b>Antenna</b> — 437 MHz half-wave dipole (33.1 cm) with 50→70 Ω impedance-matching network.</li><li><b>Payload</b> — NEO-7M GPS, OV5642 5 MP camera, SX1278 LoRa, BME280 environmental and CJMCU-4541 gas sensors for Earth observation and atmospheric sensing.</li><li>Simulated under LEO conditions (500 km, 35-minute eclipse); fully PC-104 compatible, designed in EasyEDA Pro.</li></ul>
+  <div class="outcome"><span>Outcome</span> Awarded <b>Best Thesis Award</b> — the platform behind two first-author IEEE publications on CubeSat power and communication architecture.</div>
+</article>
+
+<article class="proj" id="p04">
+  <div class="pnum">PROJECT 04</div>
+  <h3>CubeSat Solar Array — 222.8 W Deployable Panel System</h3>
+  <div class="pclient">SOLLAB Co., Ltd. — South Korea</div>
+  <div class="pmeta">Role: Hardware Design Engineer  ·  Ongoing remote R&amp;D engagement  ·  GSFC-STD-7000 compliant</div>
+  <p class="psum">A five-panel, 184-cell spacecraft solar array built on AZUR SPACE 3G30A triple-junction GaAs cells — sized, strung and routed for a 2-week LEO direct-solar-feed mission, delivered with a full design and specification report.</p>
+  <div class="gallery g3"><figure><img src="img/sol_depA.jpg" alt="Deployable panel — hinged, with sun sensor" loading="lazy" onclick="lb(this)"><figcaption>Deployable panel — hinged, with sun sensor</figcaption></figure>
+<figure><img src="img/sol_depB.jpg" alt="Deployable panel — 2D layout with harness routing" loading="lazy" onclick="lb(this)"><figcaption>Deployable panel — 2D layout with harness routing</figcaption></figure>
+<figure><img src="img/sol_fixed.jpg" alt="Fixed panel — 48-cell 6S8P, 58.1 W" loading="lazy" onclick="lb(this)"><figcaption>Fixed panel — 48-cell 6S8P, 58.1 W</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li><b>184 cells across five panels delivering 222.8 W BOL @ 28°C</b> against a 212.6 W mission budget — +4.8% margin.</li><li><b>AZUR SPACE 3G30A triple-junction GaAs</b> (29.3% efficiency, built-in bypass diodes); one fixed 6S8P panel plus four deployables (6S6P / 4S8P), every string self-contained and under 20 V for PCDU MPPT compatibility.</li><li><b>GSFC-STD-7000 compliance engineered in</b> — redundant grounding via bleed resistors (4.3.1.3), bonding ≤100 Ω (4.3.1.4) and all surfaces &gt;10 cm² grounded &lt;1 MΩ for ESD (4.3.1.5).</li><li>CSS-10 sun sensor integration for attitude reference; hinged deployable mechanics with routed harness paths.</li></ul>
+  <div class="outcome"><span>Outcome</span> Delivered as a final design &amp; specification report (v4) with complete string design, routing rules, grounding, bonding and ESD strategy — part of a continuing R&amp;D engagement with SOLLAB's space solar programme.</div>
+</article>
+
+<article class="proj" id="p05">
+  <div class="pnum">PROJECT 05</div>
+  <h3>5-Channel UMPPT PCDU — 28 V Unified Bus, 212.6 W</h3>
+  <div class="pclient">SOLLAB Co., Ltd. — South Korea</div>
+  <div class="pmeta">Role: Hardware Design Engineer  ·  Companion unit to the 222.8 W solar array  ·  GSFC-STD-7000 derated</div>
+  <p class="psum">A Power Conditioning and Distribution Unit for a 2-week LEO CubeSat mission — five independent MPPT channels combined onto a regulated 28 V bus, with supercapacitor transient buffering and full protection, sensing and OBC telemetry.</p>
+  <div class="gallery g2"><figure><img src="img/pcdu_anno.jpg" alt="PCDU board — annotated subsystem map" loading="lazy" onclick="lb(this)"><figcaption>PCDU board — annotated subsystem map</figcaption></figure>
+<figure><img src="img/pcdu_3d.jpg" alt="3D render — supercapacitor bank and 5-channel MPPT tiers" loading="lazy" onclick="lb(this)"><figcaption>3D render — supercapacitor bank and 5-channel MPPT tiers</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li><b>5-channel UMPPT topology</b> — one LT8490 synchronous buck-boost MPPT controller per solar panel, combined via Schottky isolation diodes onto a <b>28 V unified bus</b>; distributes 212.6 W across 3.3 V, 5 V and 28 V rails (11 payload channels).</li><li><b>Supercapacitor buffer (2x BCAP0350, 175 F / 5 V)</b> with charge manager and auto-switchover for pulsed-load support on the 5 V rail — no battery, direct solar feed.</li><li>Per-channel two-stage <b>EMI filtering with TVS clamping</b> (SMBJ series, 3x V_oc derating) and INA181A1 high-side voltage/current sensing into an ADS7953 ADC array for closed-loop P&amp;O MPPT.</li><li><b>Layered protection</b> — three circuit breakers, opto isolation switch for overcurrent action, isolation diodes, fuel gauge and dual NTC thermal monitoring, all telemetered to the OBC.</li><li>All COTS power ICs <b>derated per NASA GSFC-STD-7000</b>; SMD packaging validated against Falcon 9 / Electron launch vibration profiles.</li></ul>
+  <div class="outcome"><span>Outcome</span> Delivered as a full design and analysis report with the annotated board and fabrication-ready layout — the power core of SOLLAB's CubeSat mission, feeding from the 184-cell array of Project 04.</div>
+</article>
+
+<article class="proj" id="p06">
+  <div class="pnum">PROJECT 06</div>
+  <h3>MPPT Solar Charge Controller — 300 W Class</h3>
+  <div class="pclient">International client — commercial delivery</div>
+  <div class="pmeta">Role: Electrical &amp; PCB Design Engineer  ·  2026</div>
+  <p class="psum">A microcontroller-driven boost converter charging a 45-cell LiFePO4 pack directly from a solar array, delivered with a 33-page design report traceable to manufacturer datasheets.</p>
+  <div class="gallery g2"><figure><img src="img/mppt_layout.jpg" alt="PCB layout — power stage, heatsink areas and status LED bank" loading="lazy" onclick="lb(this)"><figcaption>PCB layout — power stage, heatsink areas and status LED bank</figcaption></figure>
+<figure><img src="img/mppt_3d.jpg" alt="3D render — ESP32 control section, toroidal inductor and TO-220 power devices" loading="lazy" onclick="lb(this)"><figcaption>3D render — ESP32 control section, toroidal inductor and TO-220 power devices</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li><b>50 V VOC / 8 A ISC solar input → 164 V, 45S LiFePO4 output</b> at approximately 300–330 W charge power.</li><li>Single-switch non-isolated <b>boost topology with paralleled MOSFETs</b>, IR2110 high-side gate drive and a tuned RC snubber.</li><li><b>Isolated Hall-effect current sensing</b> (ACS711 / ACS712) on both input and output with an OPA4340 analogue front end for MPPT and Coulomb counting.</li><li>Three independent auxiliary rails (12 V, 3.3 V main, 3.3 V USB) with <b>LM66100 power-path isolation</b> to combine sources safely.</li><li>Every passive value derived from first principles — inductor and capacitor sizing, divider ratios, snubber values and heatsink thermal budget.</li></ul>
+  <div class="outcome"><span>Outcome</span> Delivered a fabrication-ready 2-layer design with Gerbers, drill and pick-and-place files, a fully LCSC-sourced BOM, a 33-page hardware design report and a companion firmware specification covering GPIO mapping, ADC scaling and the charge state machine.</div>
+</article>
+
+<article class="proj" id="p07">
+  <div class="pnum">PROJECT 07</div>
+  <h3>4S→6S Series-Injection Drone Power Module — 150 A Burst</h3>
+  <div class="pclient">FPV drone platform — international client (under NDA)</div>
+  <div class="pmeta">Role: Electrical &amp; PCB Design Engineer  ·  2026  ·  Design verified from first principles before layout</div>
+  <p class="psum">A bidirectional battery power-boost module that series-injects a 2S booster pack onto a 4S main pack for burst propulsion — sixteen paralleled power FETs, hardware-latched protection and full analytical verification ahead of schematic capture.</p>
+  <div class="gallery g4"><figure><img src="img/drone_3dtop.jpg" alt="Control side — ESP32-C6, isolated sensing and programming chain" loading="lazy" onclick="lb(this)"><figcaption>Control side — ESP32-C6, isolated sensing and programming chain</figcaption></figure>
+<figure><img src="img/drone_3dbot.jpg" alt="Power side — sixteen TO-252 FETs on 2 oz thermal planes" loading="lazy" onclick="lb(this)"><figcaption>Power side — sixteen TO-252 FETs on 2 oz thermal planes</figcaption></figure>
+<figure><img src="img/drone_top2d.jpg" alt="Top layer — 2S balance, differential cell sensing, UART/debug" loading="lazy" onclick="lb(this)"><figcaption>Top layer — 2S balance, differential cell sensing, UART/debug</figcaption></figure>
+<figure><img src="img/drone_bot2d.jpg" alt="Bottom layer — bypass and inject FET banks with gate networks" loading="lazy" onclick="lb(this)"><figcaption>Bottom layer — bypass and inject FET banks with gate networks</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li><b>8 + 8 NCE60P50K FET banks</b> — back-to-back bidirectional bypass pairs plus a unidirectional inject bank rated for <b>150 A boost bursts</b>, each device on a dedicated 2 oz copper plane with via stitching.</li><li><b>Firmware-independent protection</b> — ACS758 current sensing into an LM393 hardware SR-latch over-current trip, gate Vgs zener clamps, SMBJ30A TVS coordination and RC break-before-make dead time.</li><li><b>Floating-pack instrumentation</b> — INA149 difference amplifiers with ADS1115 ADC measure individual 2S cell voltages riding 16.8–25.2 V above ground.</li><li>Precharge circuit tames ESC bulk-capacitor inrush; XL2596S buck rail powers the ESP32-C6 control and telemetry link.</li><li>Every stage validated analytically at worst case (junction temperature, clamp currents, divider chains) in a formal <b>Design Verification Report</b> gating schematic capture.</li></ul>
+  <div class="outcome"><span>Outcome</span> DVR-gated design flow — verification report, LCSC-sourced BOM and KiCad schematic delivered, with layout thermal rules and a proof-board test plan; identified and corrected a critical under-sized FET bank specified by the client.</div>
+</article>
+
+<article class="proj" id="p08">
+  <div class="pnum">PROJECT 08</div>
+  <h3>UWB Direction-Finding Flight Controller — STM32G473</h3>
+  <div class="pclient">UAV client — commercial delivery</div>
+  <div class="pmeta">Role: PCB Design Engineer  ·  2026  ·  36 x 36 mm, 4-layer, released fab-ready</div>
+  <p class="psum">A compact flight-controller-class board that measures aircraft bearing with a UWB radio array, sits inline on the pilot's control and video links to overlay warnings — and keeps the pilot in control even if the board loses power.</p>
+  <div class="gallery g4"><figure><img src="img/fc_3dtop.jpg" alt="Top — STM32G473, UWB array ports (LEFT / RIGHT / REAR / ANC)" loading="lazy" onclick="lb(this)"><figcaption>Top — STM32G473, UWB array ports (LEFT / RIGHT / REAR / ANC)</figcaption></figure>
+<figure><img src="img/fc_3dbot.jpg" alt="Bottom — buck power stage, UART and SWD/debug" loading="lazy" onclick="lb(this)"><figcaption>Bottom — buck power stage, UART and SWD/debug</figcaption></figure>
+<figure><img src="img/fc_top2d.jpg" alt="Top layer — MCU fan-out, OSD, GPS and CRSF ports" loading="lazy" onclick="lb(this)"><figcaption>Top layer — MCU fan-out, OSD, GPS and CRSF ports</figcaption></figure>
+<figure><img src="img/fc_bot2d.jpg" alt="Bottom layer — power entry, 5 V buck and debug breakout" loading="lazy" onclick="lb(this)"><figcaption>Bottom layer — power entry, 5 V buck and debug breakout</figcaption></figure>
+</div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li><b>STM32G473 (Cortex-M4, 170 MHz)</b> orchestrating a <b>3-receiver + anchor DW3220 UWB array</b> for phase-difference-of-arrival (PDoA) direction sensing.</li><li><b>CRSF inline pass-through with hardware fail-safe bypass</b> — the pilot's RC link survives even total board power loss.</li><li><b>OSD warning overlay</b> onto the pilot's video feed — digital VTX on the main board, analog via a companion daughterboard.</li><li>4S LiPo input (12–16.8 V) with reverse-polarity P-FET and TVS protection into a 5 V buck and 3.3 V LDO; GPS, USB-C DFU, SWD debug, temperature sensor and EEPROM.</li><li><b>36 x 36 mm, 4-layer, 1 oz copper</b> on the standard 30.5 mm M3 pattern — solid inner ground plane, via-stitched pours, 90 Ω length-matched USB pair; all pins verified against the STM32G473 datasheet.</li></ul>
+  <div class="outcome"><span>Outcome</span> Released fabrication-ready to JLCPCB with native EasyEDA Pro source, netlist and BOM after a documented client design review — every review finding closed and verified.</div>
+</article>
+
+<article class="proj" id="p09">
+  <div class="pnum">PROJECT 09</div>
+  <h3>Flight-Ready CanSat — AAS International Competition</h3>
+  <div class="pclient">American Astronautical Society — United States</div>
+  <div class="pmeta">Role: Electrical &amp; Mechanical Lead  ·  June 2025</div>
+  <p class="psum">A can-sized satellite designed, built and flown in international competition, placing in the top 40 percent of a global finalist field.</p>
+  <div class="gallery g0"></div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li>System architecture and <b>custom PCB design</b> for the full avionics stack.</li><li>Fabrication, assembly and flight-readiness validation of the integrated vehicle.</li><li>Resilient power architecture for a reusable, recoverable small-satellite class.</li></ul>
+  <div class="outcome"><span>Outcome</span> <b>16th place among 40 international finalist teams</b>, United States, June 2025. Design experience published as a first-author IEEE paper on resilient CanSat power systems.</div>
+</article>
+
+<article class="proj" id="p10">
+  <div class="pnum">PROJECT 10</div>
+  <h3>Rover-71 — Anatolian Rover Challenge</h3>
+  <div class="pclient">ARC'25 — Turkey</div>
+  <div class="pmeta">Role: Electrical Lead  ·  2025</div>
+  <p class="psum">Electrical architecture and power integration for an indigenous Mars rover platform competing against 27 international teams.</p>
+  <div class="gallery g0"></div>
+  <div class="hl-label">TECHNICAL HIGHLIGHTS</div>
+  <ul class="hl"><li>Complete <b>electrical architecture</b> for drive, control and power distribution.</li><li>PCB integration and system-level testing across mechanical and software teams.</li><li>Field validation under competition conditions.</li></ul>
+  <div class="outcome"><span>Outcome</span> <b>8th position globally (83.83%)</b> among 27 international teams at ARC'25, Turkey. Co-authored an IEEE TENSYMP publication on the rover's electro-mechanical design.</div>
+</article>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="sec-k">03 · EXPERIENCE</div><h2>Experience</h2>
+<div class="tl">
+<div class="tl-item"><h4>Executive Electrical Engineer</h4><div class="co">Palki Motors Limited — Dhaka, Bangladesh</div><div class="dt">JAN 2026 — PRESENT</div><p>Battery pack, BMS and motor-controller R&amp;D for Bangladesh's first indigenous electric vehicle. Cell balancing, SoC estimation, thermal management and layered fault protection.</p></div>
+<div class="tl-item"><h4>Freelance PCB &amp; Embedded Hardware Engineer</h4><div class="co">Fiverr &amp; Freelancer.com — international clients</div><div class="dt">2025 — PRESENT</div><p>Satellite power systems, drone power modules and flight controllers for clients including SOLLAB Co., Ltd. (South Korea) — ongoing R&amp;D engagement.</p></div>
+<div class="tl-item"><h4>PCB Design Engineer (R&amp;D)</h4><div class="co">Robotry BD — remote, part-time</div><div class="dt">OCT 2023 — JUN 2025</div><p>Multi-layer PCBs for commercial IoT products, end to end — schematic capture to production DFM release.</p></div>
+<div class="tl-item"><h4>BSc in Aeronautical Engineering (Avionics)</h4><div class="co">Aviation &amp; Aerospace University Bangladesh</div><div class="dt">2022 — 2025 · CGPA 3.41 / 4.00 · BEST THESIS AWARD</div><p>Thesis: complete indigenous 1U space-grade CubeSat — all five subsystems designed, built and validated.</p></div>
+</div>
+</div></section>
+
+<section id="publications" style="background:var(--bg2)"><div class="wrap">
+<div class="sec-k">04 · RESEARCH</div><h2>Publications</h2>
+<div class="pub"><div class="pubn">01</div>
+<div><div class="pubt">A Framework for Resilient Power Systems in CanSat-Class Reusable Small Satellites</div><div class="pubm">First author · MEPCON 2025, Aswan, Egypt</div></div>
+<a class="publink" href="https://ieeexplore.ieee.org/document/11360120" target="_blank" rel="noopener">IEEE&nbsp;Xplore&nbsp;→</a></div>
+<div class="pub"><div class="pubn">02</div>
+<div><div class="pubt">Reliability-Oriented Design and Evaluation of a Distributed CubeSat EPS with N-1 Redundancy and Hybrid Li-ion/Supercapacitor Storage</div><div class="pubm">First author · MEPCON 2025, Aswan, Egypt</div></div>
+<a class="publink" href="https://ieeexplore.ieee.org/document/11360261" target="_blank" rel="noopener">IEEE&nbsp;Xplore&nbsp;→</a></div>
+<div class="pub"><div class="pubn">03</div>
+<div><div class="pubt">A Low-Power UHF Communication Architecture for 1U CubeSats Operating in LEO</div><div class="pubm">First author · ICCIT 2025, Cox's Bazar, Bangladesh</div></div>
+<a class="publink" href="https://ieeexplore.ieee.org/document/11360261" target="_blank" rel="noopener">IEEE&nbsp;Xplore&nbsp;→</a></div>
+<div class="pub"><div class="pubn">04</div>
+<div><div class="pubt">Design and Development of an Indigenous Ground Station for LEO Orbit Satellites</div><div class="pubm">Second author · IEEE NEleX 2023</div></div>
+<a class="publink" href="https://ieeexplore.ieee.org/document/10421680" target="_blank" rel="noopener">IEEE&nbsp;Xplore&nbsp;→</a></div>
+<div class="pub"><div class="pubn">05</div>
+<div><div class="pubt">Electro-Mechanical Design Analysis and Implementation of an Indigenous Mars Rover (Rover-71)</div><div class="pubm">Third author · IEEE TENSYMP 2024, New Delhi, India</div></div>
+<a class="publink" href="https://ieeexplore.ieee.org/document/10752217" target="_blank" rel="noopener">IEEE&nbsp;Xplore&nbsp;→</a></div>
+
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="sec-k">05 · CONTACT</div><h2>Get in touch</h2>
+<div class="contact-box">
+<p>Open to hardware engineering roles in space power systems.<br>Relocating to South Korea.</p>
+<div class="contact-links">
+<a href="mailto:benzir.ahammed.research@gmail.com">benzir.ahammed.research@gmail.com</a>
+<a href="tel:+8801948338495">+880 1948-338495</a>
+<a href="https://www.linkedin.com/in/benzir-ahammed" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+</div></section>
+
+<footer>© 2026 Benzir Ahammed · Dhaka, Bangladesh · Built for the stars</footer>
+
+<div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src="" alt=""></div>
+<script>
+function lb(el){document.getElementById('lbimg').src=el.src;document.getElementById('lightbox').style.display='flex'}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.proj,.comp,.stat,.tl-item,.pub').forEach(el=>{el.classList.add('fade');obs.observe(el)});
+</script>
+</body>
+</html>
